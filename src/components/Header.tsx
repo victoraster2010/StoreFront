@@ -11,7 +11,7 @@ export const Header: React.FC<Props> = ({ setPage }) => {
         <header>
             <div className="bg-mclarenOrange h-20 flex justify-between items-center text-mclarenBlueTxt">
                 <a href="#" className="font-bold md:text-3xl md:ml-40 md:mt-3 md:mb-7 md:mr-28 text-mclarenBlueTxt
-                md:hover:text-4xl md:hover:text-white">
+                md:hover:scale-150 md:hover:text-white">
                     StoreFront
                 </a>
                 <div className="flex flex-col items-center">
@@ -21,7 +21,8 @@ export const Header: React.FC<Props> = ({ setPage }) => {
                 </div>
 
                 <div className="flex flex-row justify-around items-center h-1/2">
-                    <a className="mr-4 py-7 hover:shadow-lg transition duration-300 ease-in-out hover:bg-greyClaren" href="#">Cadastro de Produtos</a>
+                    <a className="mr-4 py-7 hover:shadow-lg transition duration-300 ease-in-out hover:bg-greyClaren" 
+                    onClick={(event) => handleNavigation('create-product', event)} href="#">Cadastro de Produtos</a>
                     <a className="mr-4 py-7 font-normal hover:bg-greyClaren hover:shadow-lg transition duration-300 ease-in-out" href="#">Cadastro de Vendas</a>
                     <a className="mr-4 py-7 hover:bg-greyClaren hover:shadow-lg transition duration-300 ease-in-out" 
                     onClick={(event) => handleNavigation('sales', event)} href="#">Vendas</a>
