@@ -7,14 +7,16 @@ export const Products = () => {
             {/* Botões e campos de pesquisa */}
             <span className="md:mt-2">
                 <input type="number"
-                className="border-solid border-2 border-black focus:border-mclarenOrange rounded-md focus:outline-none" 
+                className="border-solid border-2 border-black focus:border-mclarenOrange rounded-md focus:outline-none px-4 py-2" 
                 placeholder="Insira o numero do Id do produto"/>
-             <button className="border border-slate-900 md:px-4 md:py-2 md:ml-2 bg-gray-200 hover:bg-mclarenOrange rounded-md" type="button">Pesquisar</button></span>
+             <button className="bg-yellow-300 border-2 border-black px-2 py-2 rounded-lg transition-transform
+            transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-opacity-50 ml-4" type="button">Pesquisar</button></span>
             <span className="md:mt-8">
                 <input
-                className="border-solid border-2 border-black focus:border-mclarenOrange focus:outline-none rounded-md" 
+                className="border-solid border-2 border-black focus:border-mclarenOrange focus:outline-none rounded-md px-4 py-2" 
                 type="text" placeholder="Insira o nome do produto"/> 
-                <button className="border border-slate-900 md:px-4 md:py-2 md:ml-2 bg-gray-200 hover:bg-mclarenOrange rounded-md" type="button">Pesquisar</button></span>
+                <button className="bg-yellow-300 border-2 border-black px-2 py-2 rounded-lg transition-transform
+            transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-opacity-50 ml-4" type="button">Pesquisar</button></span>
         </div>
         <div className="flex flex-wrap">
             <ProductCard/>
